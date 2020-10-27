@@ -78,3 +78,47 @@ p {
     align-self: center;
     object-fit: cover;
 }
+
+.containercar {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+   
+.item-a {
+    grid-row: 1 / 1;
+}
+   
+.item-b {
+    grid-row: 2 / 1;
+}
+   
+.item-c {
+    grid-row: 2 / 2;
+}
+   
+.item-d {
+    grid-row: 3 / 2;
+}
+
+.item-e {
+    grid-row: 4 / 3;
+}
+   
+.item-f {
+    grid-row: 5 / 3;
+}
+
+
+
