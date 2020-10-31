@@ -78,3 +78,12 @@ p {
     align-self: center;
     object-fit: cover;
 }
+
+.container section {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+ section .container {
+    
+ } 
