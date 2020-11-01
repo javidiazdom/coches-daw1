@@ -211,3 +211,26 @@ p {
     margin-bottom: 2rem;
     align-items: center;
 }
+
+
+table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: #F9F9F9;
+    padding: 1rem;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+tr {
+    height: 1.6rem;
+    font-family: Source Sans Pro;
+}
+
+th {
+    text-align: left;
+    color: #FFD12E;
+    border-bottom: 1px solid  #FFD12E;
+}
