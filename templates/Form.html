@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Styles.css">
+        <title>Review Form</title>
+    </head>
+    <body>
+        <div class="align">
+            <h1>📃New Review</h1>
+            <form>
+                <div class="containerform">
+                    <div class="containertitle">Email</div> <div class="containerinput"><input class ="sinborde" type="email" size="137" placeholder="Email" name="email" id="email" required></div>
+                    <div class="containertitle">Title</div> <div class="containerinput"><input class ="sinborde" type="text" size="137" placeholder="Title" name="title" id="titl" required></div>
+                    <div class="containertitle">Image </div> <div><input class ="sinborde" type="file" value="image/*" name="image" id="img" required></div>
+                    <div class="containertitle"> Category</div> <div><select class ="sinborde" name="Category">
+                                                                    <option>...</option>
+                                                                    <option>Combustion</option>
+                                                                    <option>Electric</option>
+                                                                </select>
+                                                               </div>
+                    <div class="containertitle-a">Description</div> <div><textarea class ="sinborde" cols="140" rows="5" placeholder="Description" name="description" id="descr" required></textarea></div>
+                </div>
+                <br><br><br>
+                <center><input class="submit" type="submit" value="Submit"></center>
+            </form>
+        </div>
+    </body>
+</html>
