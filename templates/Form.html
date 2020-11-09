@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+        <script src="javascript.js" defer></script>
         <link rel="stylesheet" href="./Styles.css">
         <title>Review Form</title>
     </head>
     <body>
         <div class="align">
             <h1>📃New Review</h1>
-            <form>
+            <form id="form">
                 <div class="containerform">
-                    <div class="containertitle">Email</div> <div class="containerinput"><input class ="sinborde" type="email" size="137" placeholder="Email" name="email" id="email" required></div>
-                    <div class="containertitle">Title</div> <div class="containerinput"><input class ="sinborde" type="text" size="137" placeholder="Title" name="title" id="titl" required></div>
-                    <div class="containertitle">Image </div> <div><input class ="sinborde" type="file" value="image/*" name="image" id="img" required></div>
-                    <div class="containertitle"> Category</div> <div><select class ="sinborde" name="Category">
-                                                                    <option>...</option>
-                                                                    <option>Combustion</option>
-                                                                    <option>Electric</option>
+                    <div class="containertitle"><center>Email</center></div> <div class="containerinput"><input class ="sinborde" type="email" size="137" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="Email" name="email" id="email" required></div>
+                    <div class="containertitle"><center>Title</center></div> <div class="containerinput"><input class ="sinborde" type="text" size="137" placeholder="Title" name="title" id="titl"></div>
+                    <div class="containertitle"><center>Image</center></div> <div><input class ="sinborde" type="file" value="image/*" name="image" id="img" required></div>
+                    <div class="containertitle"><center>Category</center></div> <div><select class ="sinborde" name="Category" id="category">
+                                                                    <option value="0">...</option>
+                                                                    <option value="1">Combustion</option>
+                                                                    <option value="2">Electric</option>
                                                                 </select>
                                                                </div>
-                    <div class="containertitle-a">Description</div> <div><textarea class ="sinborde" cols="140" rows="5" placeholder="Description" name="description" id="descr" required></textarea></div>
+                    <div class="containertitle-a"><center>Description</center></div> <div id="div"><textarea class ="sinborde" cols="140" rows="5" placeholder="Description" name="description" id="descr" required></textarea></div>
                 </div>
                 <br><br><br>
                 <center><input class="submit" type="submit" value="Submit"></center>
