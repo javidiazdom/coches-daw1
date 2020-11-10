@@ -4,25 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
-        <script src="javascript.js" defer></script>
+        <script src="/scripts/javascript.js" defer></script>
         <link rel="stylesheet" href="./Styles.css">
         <title>Review Form</title>
     </head>
     <body>
         <div class="align">
             <h1>📃New Review</h1>
-            <form id="form">
+            <form id="form" onsubmit="validarForm(event)">
                 <div class="containerform">
-                    <div class="containertitle"><center>Email</center></div> <div class="containerinput"><input class ="sinborde" type="email" size="137" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="Email" name="email" id="email" required></div>
-                    <div class="containertitle"><center>Title</center></div> <div class="containerinput"><input class ="sinborde" type="text" size="137" placeholder="Title" name="title" id="titl"></div>
-                    <div class="containertitle"><center>Image</center></div> <div><input class ="sinborde" type="file" value="image/*" name="image" id="img" required></div>
+                    <div class="containertitle"><center>Email</center></div> <div class="containerinput"><input class ="sinborde" type="email" size="137" placeholder="Email 'name@domain.org'" name="email" id="email"> </div> <div id="1" class="div-error"></div>
+                    <div class="containertitle"><center>Title</center></div> <div class="containerinput"><input class ="sinborde" type="text" size="137" placeholder="Title 'Not empty and less than 25'" name="title" id="titl"> </div> <div id="2" class="div-error"></div>
+                    <div class="containertitle"><center>Image</center></div> <div><input class ="sinborde" type="file" value="image/*" name="image" id="img"> </div> <div id="3" class="div-error-b"></div>
                     <div class="containertitle"><center>Category</center></div> <div><select class ="sinborde" name="Category" id="category">
-                                                                    <option value="0">...</option>
-                                                                    <option value="1">Combustion</option>
-                                                                    <option value="2">Electric</option>
+                                                                    <option value=''>...</option>
+                                                                    <option>Combustion</option>
+                                                                    <option>Electric</option>
                                                                 </select>
-                                                               </div>
-                    <div class="containertitle-a"><center>Description</center></div> <div id="div"><textarea class ="sinborde" cols="140" rows="5" placeholder="Description" name="description" id="descr" required></textarea></div>
+                                                               </div> <div id="4" class="div-error-a"></div>
+                    <div class="containertitle-a"><center>Description</center></div> <div id="div"><textarea class ="sinborde" cols="140" rows="5" placeholder="Description'Not empty and less than 1200'" name="description" id="descr"></textarea> </div> <div id="5" class="div-error"></div>
                 </div>
                 <br><br><br>
                 <center><input class="submit" type="submit" value="Submit"></center>

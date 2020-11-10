@@ -296,7 +296,7 @@ th {
     padding: 1rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 90px 90px;
+    grid-template-columns: 90px 90px 90px;
     grid-template-rows: 45px 45px 45px 45px 45px;
     grid-gap: 3px;
 }
@@ -322,5 +322,19 @@ th {
     border-color: red;
 }
 
+.div-error {
+    color:red;
+    margin:0px 0px 0px 918px;
+}
+
+.div-error-a {
+    color:red;
+    margin:0px 0px 0px 26px;
+}
+
+.div-error-b {
+    color:red;
+    margin:0px 0px 0px 190px;
+}
 
 
