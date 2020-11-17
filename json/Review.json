@@ -9,8 +9,8 @@
          },
          {
            "titulo":"Motor, transmisión y rendimiento",
-            "texto":"La potencia proviene de un motor de seis cilindros en línea biturbo de 425 hp, con una transmisión manual de seis velocidades o una transmisión automática de doble embrague de siete velocidades y tracción trasera. El paquete Competition aumenta la potencia de salida a 444 caballos, reajusta los amortiguadores adaptativos, agrega una relación de dirección más directa e introduce nuevas configuraciones para el sistema de control de estabilidad y el diferencial trasero.",
-            "foto": "/templates/assets/motor-m4.jpg"
+           "texto":"La potencia proviene de un motor de seis cilindros en línea biturbo de 425 hp, con una transmisión manual de seis velocidades o una transmisión automática de doble embrague de siete velocidades y tracción trasera. El paquete Competition aumenta la potencia de salida a 444 caballos, reajusta los amortiguadores adaptativos, agrega una relación de dirección más directa e introduce nuevas configuraciones para el sistema de control de estabilidad y el diferencial trasero.",
+           "foto": "/templates/assets/motor-m4.jpg"
          }
       ]
     }

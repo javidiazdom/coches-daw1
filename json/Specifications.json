@@ -1,0 +1,35 @@
+{
+    "tabla1" : [
+        {
+            "prestacion1" : "Velocidad máxima",
+            "valor1" : "250 km/h",
+            "prestacion2" : "Emisiones de CO₂ NEDC",
+            "valor2" : "204 gr/km",
+            "prestacion3" : "Combustible",
+            "valor3" : "Gasolina",
+            "prestacion4" : "Tracción",
+            "valor4" : "Trasera",
+            "prestacion5" : "Caja de cambios",
+            "valor5" : "Manual",
+            "prestacion6" : "Potencia máxima",
+            "valor6" : "431CV/317kW",
+        }
+    ],
+
+    "tabla2" : [
+        {
+            "prestacion1" : "Número de puertas",
+            "valor1" : "2",
+            "prestacion2" : "Longitud",
+            "valor2" : "4.671 mm",
+            "prestacion3" : "Anchura",
+            "valor3" : "1.870 mm",
+            "prestacion4" : "Altura",
+            "valor4" : "1.383 mm",
+            "prestacion5" : "Vía delantera",
+            "valor5" : "1.579 mm",
+            "prestacion6" : "Vía trasera",
+            "valor6" : "1.603 mm",
+        }
+    ]
+}
