@@ -1,0 +1,17 @@
+{
+    "titulo": "Lorem ipsum dolor sit amet",
+    "contenido":{
+      "apartados": [
+         {
+           "titulo":"Lorem ipsum",
+           "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida enim ut euismod sollicitudin. Nunc sapien orci, commodo eget massa ac, viverra condimentum purus. Curabitur iaculis elementum risus vitae egestas. Integer consectetur ex et mauris eleifend aliquam. Sed luctus accumsan urna, sed porttitor turpis pretium lobortis.",
+           "foto": "./assets/subasta-bmw-m4-gts-1975555.jpg"
+         },
+         {
+           "titulo":"Lorem ipsum",
+            "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida enim ut euismod sollicitudin. Nunc sapien orci, commodo eget massa ac, viverra condimentum purus. Curabitur iaculis elementum risus vitae egestas. Integer consectetur ex et mauris eleifend aliquam. Sed luctus accumsan urna, sed porttitor turpis pretium lobortis.",
+            "foto": "./assets/subasta-bmw-m4-gts-1975555.jpg"
+         }
+      ]
+    }
+  }
