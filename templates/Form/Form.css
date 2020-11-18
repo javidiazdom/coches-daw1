@@ -1,0 +1,64 @@
+.containertitle {
+    width: 90px;
+    height:25px;
+    background-color: #cdd6d2;
+    border-right: 3px solid #000000;
+}
+
+.containertitle-a {
+    width: 90px;
+    height:80px;
+    background-color: #cdd6d2;
+    border-right: 3px solid #000000;
+}
+
+.containerinput {
+    width: 1000px;
+    height:23px;
+    background-color: #FFFFFF;
+}
+
+.containerform {
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 45px 45px 45px 45px 45px;
+    grid-gap: 3px;
+}
+
+.sinborde {
+    border: 0;
+}
+
+.submit {
+    width: 90px;
+    height: 50px;
+    background-color: rgba(247, 247, 8, 0.801);
+    color: #000000;
+    border-radius: 8px;
+    border: 0;
+}
+
+.submit:hover {
+    color: #FFFFFF;
+}
+
+.error {
+    border-color: red;
+}
+
+.div-error {
+    color:red;
+    margin:0px 0px 0px 918px;
+}
+
+.div-error-a {
+    color:red;
+    margin:0px 0px 0px 26px;
+}
+
+.div-error-b {
+    color:red;
+    margin:0px 0px 0px 190px;
+}

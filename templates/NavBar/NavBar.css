@@ -16,3 +16,14 @@ a {
 a:hover {
     text-shadow: 0px 0px 7px #FFD12E;
 }
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: 1.2rem;
+        color: #CECECE;
+    }
+
+    nav {
+        border-bottom: none;
+    }
+}
