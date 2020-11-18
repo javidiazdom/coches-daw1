@@ -65,6 +65,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .align {
+        padding: 10px;
+    }
     .container2 {
         background-color: transparent;
     }
@@ -74,8 +77,11 @@
     }
 
     .containercar {
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 30% 60%;
         display: grid;
+        margin: 0;
+        max-width: 100%;
+
     }
 
     .item-a, .item-b, .item-c, .item-d {
