@@ -37,7 +37,7 @@ function validarForm(event) {
     if(category.value == '') {
         //correcto = false;
         event.preventDefault();
-        document.getElementById('4').innerHTML='Escoja una';
+        document.getElementById('4').innerHTML='Escoja una opción';
         category.focus();
     } else {
         document.getElementById('4').innerHTML='';
