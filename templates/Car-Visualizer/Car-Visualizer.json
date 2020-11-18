@@ -1,0 +1,41 @@
+{
+    "contenido": [
+        {
+            "foto": "/templates/assets/bmw.jpg",
+            "nombre": "BMW X6",
+            "categoria": "Combustion",
+            "minutos": "12"
+            
+        },
+        {
+            "foto": "/templates/assets/mercedes.jpeg",
+            "nombre": "Mercedes GLE Coupé",
+            "categoria": "Combustion",
+            "minutos": "4"
+        },
+        {
+            "foto": "/templates/assets/ferrari.jpg",
+            "nombre": "Ferrari 456",
+            "categoria": "Combustion",
+            "minutos": "2"
+        },
+        {
+            "foto": "/templates/assets/seat.jpg",
+            "nombre": "Seat Arona",
+            "categoria": "Combustion",
+            "minutos": "60"
+        },
+        {
+            "foto": "/templates/assets/peugeot.jpg",
+            "nombre": "Peugeot 208",
+            "categoria": "Combustion",
+            "minutos": "90"
+        },
+        {
+            "foto": "/templates/assets/mustang.jpg",
+            "nombre": "Mustang Shelby GT500",
+            "categoria": "Combustion",
+            "minutos": "54"
+        }
+    ]
+}

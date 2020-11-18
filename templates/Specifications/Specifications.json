@@ -1,0 +1,22 @@
+{
+    "tabla1" : [
+        {
+            "Velocidad máxima": "250 km/h",
+            "Emisiones de CO₂ NEDC": "204 gr/km",
+            "Combustible": "Gasolina",
+            "Tracción": "Trasera",
+            "Caja de cambios": "Manual",
+            "Potencia máxima": "431CV/317kW"
+        }
+    ],
+    "tabla2" : [
+        {
+            "Número de puertas": "2",
+            "Longitud": "4.671 mm",
+            "Anchura": "1.870 mm",
+            "Altura": "1.383 mm",
+            "Vía delantera": "1.579 mm",
+            "Vía trasera": "1.603 mm"
+        }
+    ]
+}
