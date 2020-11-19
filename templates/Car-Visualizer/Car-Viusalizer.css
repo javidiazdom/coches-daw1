@@ -16,6 +16,13 @@
     margin:auto;
 }
 
+.containercar img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
 .item-a {
     border: #2C8168 3px solid;
     border-radius: 10px;

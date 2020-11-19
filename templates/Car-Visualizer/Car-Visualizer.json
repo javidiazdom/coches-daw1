@@ -4,38 +4,38 @@
             "foto": "/templates/assets/bmw.jpg",
             "nombre": "BMW X6",
             "categoria": "Combustion",
-            "minutos": "12"
+            "minutos": "12 minutos"
             
         },
         {
             "foto": "/templates/assets/mercedes.jpeg",
             "nombre": "Mercedes GLE Coupé",
             "categoria": "Combustion",
-            "minutos": "4"
+            "minutos": "4 horas"
         },
         {
             "foto": "/templates/assets/ferrari.jpg",
             "nombre": "Ferrari 456",
             "categoria": "Combustion",
-            "minutos": "2"
+            "minutos": "2 horas"
         },
         {
             "foto": "/templates/assets/seat.jpg",
             "nombre": "Seat Arona",
             "categoria": "Combustion",
-            "minutos": "60"
+            "minutos": "60 minutos"
         },
         {
             "foto": "/templates/assets/peugeot.jpg",
             "nombre": "Peugeot 208",
             "categoria": "Combustion",
-            "minutos": "90"
+            "minutos": "90 minutos"
         },
         {
             "foto": "/templates/assets/mustang.jpg",
             "nombre": "Mustang Shelby GT500",
             "categoria": "Combustion",
-            "minutos": "54"
+            "minutos": "54 minutos"
         }
     ]
 }
