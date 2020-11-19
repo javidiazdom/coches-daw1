@@ -1,0 +1,36 @@
+.container-dcha {
+    display: inline-block;
+    width: 40%;
+}
+
+.container-izqda {
+    display: inline-block;
+    width: 20%;
+    margin-right: 175px;
+    margin-left: 45px;
+}
+
+.container-izqda > div, .container-dcha > div {
+    display: block;
+}
+
+.container-izqda h2, .container-dcha p {
+    border-bottom: 1px solid #979494;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    margin-top: 20px;
+}
+
+.parrafo {
+    display: block;
+}
+
+.div-error {
+    color:red;
+}
+
+.error {
+    border-color: red;
+}
