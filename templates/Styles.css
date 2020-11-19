@@ -78,15 +78,6 @@ p {
   border-radius: 7px;
 }
 
-.container .icon {
-  position: absolute;
-  height: 10%;
-  width: auto;
-  right: 6%;
-  top: -35px;
-  cursor: pointer;
-}
-
 .review-container {
   display: flex;
   flex-direction: column;
