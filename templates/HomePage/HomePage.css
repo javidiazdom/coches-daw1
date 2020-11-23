@@ -5,6 +5,11 @@
     grid-template-columns: 35% 65%;
 }
 
+.preview-divider-small img {
+    object-fit: cover;
+    height: 16rem;
+}
+
 .preview-divider-large {
     display: grid;
     grid-template-columns: 45% 55%;
@@ -12,6 +17,10 @@
 
 .preview-divider-large img {
     height: auto;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 .column-grid {
@@ -67,7 +76,9 @@
     p {
         font-size: 0.9rem ;
         color: #676767;
-
+        text-overflow:ellipsis;
+        max-height:4rem;
+        overflow: hidden;
     }
 
     h4 {
@@ -96,7 +107,6 @@
         border-radius: 15px;
         object-fit: cover;
         height: 7rem;
-        width: 7rem;
     }
 
     .preview-divider-small {
@@ -114,7 +124,6 @@
         border-radius: 15px;
         object-fit: cover;
         height: 7rem;
-        width: 7rem;
     }
 
     .preview-divider-small h3 {
