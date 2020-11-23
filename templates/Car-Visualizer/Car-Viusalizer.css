@@ -23,32 +23,7 @@
     border-radius: 7px;
 }
 
-.item-a {
-    border: #2C8168 3px solid;
-    border-radius: 10px;
-}
-   
-.item-b {
-    border: #2C8168 3px solid;
-    border-radius: 10px;
-}
-   
-.item-c {
-    border: #2C8168 3px solid;
-    border-radius: 10%;
-}
-   
-.item-d {
-    border: #2C8168 3px solid;
-    border-radius: 10px;
-}
-
-.item-e {
-    border: #2C8168 3px solid;
-    border-radius: 10px;
-}
-   
-.item-f {
+.item {
     border: #2C8168 3px solid;
     border-radius: 10px;
 }
