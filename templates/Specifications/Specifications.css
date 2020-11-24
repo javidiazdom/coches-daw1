@@ -13,21 +13,23 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        background-color: transparent;
-    }
-
     .align {
-        padding: 70px;
+        padding: 0.4rem;
+    }
+    .container {
+        padding: 0;
+        background-color: transparent;
+        border: none;
     }
 
     table {
         border-collapse: collapse;
-        background-color: #E5E5E5;
+        background-color: transparent;
     }
-
-    .left {
-        border-right: #E0E0E0 3px solid;
+    
+    td:nth-child(odd) {
+        border-right: #E0E0E0 1px solid;
+        padding-left: 0.5rem;
     }
 
     tr {
@@ -38,11 +40,15 @@
         background-color: #FFE68B;
         color: #ffffff;
         border-bottom: none;
+        padding-left: 0.5rem;
+
     }
 
     td {
         color: #EAB600;
-        border-bottom: #E0E0E0 3px solid;
+        padding-right: 0.5rem;
+        border-bottom: #E0E0E0 1px solid;
+        background-color: transparent;
     }
 
 }

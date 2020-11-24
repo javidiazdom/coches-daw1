@@ -183,4 +183,8 @@ th {
     margin:0px 0px 0px 190px;
 }
 
-
+@media screen and (max-width: 768px) {
+    body { 
+        background-color: #F4F4F4;
+    }
+}
