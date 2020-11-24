@@ -66,12 +66,8 @@
 
     }
 
-    .item-a, .item-b, .item-c, .item-d {
+    .item {
         border : none;
-    }
-
-    .item-e, .item-f {
-        display: none;
     }
 
     h2 {
