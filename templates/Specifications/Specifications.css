@@ -1,0 +1,48 @@
+.espec {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 5px 0px;
+    color: #FFD439;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .espec {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-color: transparent;
+    }
+
+    .align {
+        padding: 70px;
+    }
+
+    table {
+        border-collapse: collapse;
+        background-color: #E5E5E5;
+    }
+
+    .left {
+        border-right: #E0E0E0 3px solid;
+    }
+
+    tr {
+        height: 2.9rem;
+    }
+
+    th {
+        background-color: #FFE68B;
+        color: #ffffff;
+        border-bottom: none;
+    }
+
+    td {
+        color: #EAB600;
+        border-bottom: #E0E0E0 3px solid;
+    }
+
+}
