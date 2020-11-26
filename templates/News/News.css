@@ -1,28 +1,25 @@
-.container-dcha {
-  display: inline-block;
-  width: 40%;
+.container-noticias{
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 3%;
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: 40% 17% 28%;
+  grid-gap: 10%;
+
 }
 
-.container-izqda {
-  display: inline-block;
-  width: 20%;
-  margin-right: 175px;
-  margin-left: 45px;
-}
-
-.container-izqda > div,
-.container-dcha > div {
-  display: block;
-}
-
-.container-izqda h2,
-.container-dcha p {
-  border-bottom: 1px solid #979494;
-  padding-bottom: 10px;
+.container-noticias img{
+  object-fit: cover;
+    width: 100%;
+    height: 120%;
+    border-radius: 7px; 
 }
 
 .titulo {
-  margin-top: 20px;
+  border-bottom: solid black 1px;
 }
 
 .parrafo {
@@ -48,9 +45,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .column-grid {
-    display: flex;
-    flex-direction: column;
+  .container-noticias{
+    position: relative;
+    background-color: transparent;
+    padding: 3%;
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 90%;
+    grid-template-rows: 20% 20% 20% 20;
+    grid-gap: 10%;
+  
   }
 
   h1 {
@@ -71,54 +76,5 @@
     display: grid;
   }
 
-  .container-noticias{
-    background-color: transparent;
-    border: transparent;
-    width: 100%;
-    padding: 3%;
-  }
-
-  .noticia1{
-      background-color: white;
-      border-radius: 30px;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-      padding: 10%;
-  }
-
-  .noticia2{
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    padding: 10%;
-  }
-
-  .container-noticias p{
-    display: none;
-  }
-
-  .container-izqda h2{
-    border-bottom: transparent;
-  }
-
-  .container-izqda{
-    display: grid;
-    margin: 0.4rem 0 0 0;
-  }
-
-  .container-dcha{
-    display: grid;
-    margin: 0.4rem 0 0 0;
-  }
-
-  .img-movil{
-    display:grid;
-    border-radius: 15px;
-    object-fit: cover;
-    height: 7rem;
-  }
 
 }

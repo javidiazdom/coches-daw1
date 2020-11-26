@@ -51,14 +51,6 @@ p {
     min-height: 70%;
 }
 
-.container-noticias{
-    background-color: #FFFFFF;
-    width: 100%;
-    border: 1px solid #E2E2E2;
-    padding: 3%;
-}
-
-
 .container img {
     width: 90%;
     height: 100%;
