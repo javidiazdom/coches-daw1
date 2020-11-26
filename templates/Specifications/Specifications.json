@@ -1,22 +1,35 @@
 {
-    "tabla1" : [
+    "prestacion" : [
         {
-            "Velocidad máxima": "250 km/h",
-            "Emisiones de CO₂ NEDC": "204 gr/km",
-            "Combustible": "Gasolina",
-            "Tracción": "Trasera",
-            "Caja de cambios": "Manual",
-            "Potencia máxima": "431CV/317kW"
+            "p1": "Velocidad máxima",
+            "p2": "Emisiones de CO₂ NEDC",
+            "p3": "Combustible",
+            "p4": "Tracción",
+            "p5": "Caja de cambios",
+            "p6": "Potencia máxima",
+            "p7": "Número de puertas",
+            "p8": "Longitud",
+            "p9": "Anchura",
+            "p10": "Altura",
+            "p11": "Vía delantera",
+            "p12": "Vía trasera"
         }
     ],
-    "tabla2" : [
+
+    "valor" : [
         {
-            "Número de puertas": "2",
-            "Longitud": "4.671 mm",
-            "Anchura": "1.870 mm",
-            "Altura": "1.383 mm",
-            "Vía delantera": "1.579 mm",
-            "Vía trasera": "1.603 mm"
+            "v1": "250 km/h",
+            "v2": "204 gr/km",
+            "v3": "Gasolina",
+            "v4": "Trasera",
+            "v5": "Manual",
+            "v6": "431CV/317kW",
+            "v7": "2",
+            "v8": "4.671 mm",
+            "v9": "1.870 mm",
+            "v10": "1.383 mm",
+            "v11": "1.579 mm",
+            "v12": "1.603 mm"
         }
     ]
 }
