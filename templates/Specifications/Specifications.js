@@ -1,36 +1,40 @@
 window.onload = populateSelect();
 
 function setData (content) {
-    var nodep = document.getElementById(0);
-    const trList = nodep.querySelectorAll('tr');
-    trList[1].firstElementChild.innerHTML = content.prestacion[0].p1;
-    trList[1].lastElementChild.innerHTML = content.valor[0].v1;
-    trList[2].firstElementChild.innerHTML = content.prestacion[0].p2;
-    trList[2].lastElementChild.innerHTML = content.valor[0].v2;
-    trList[3].firstElementChild.innerHTML = content.prestacion[0].p3;
-    trList[3].lastElementChild.innerHTML = content.valor[0].v3;
-    trList[4].firstElementChild.innerHTML = content.prestacion[0].p4;
-    trList[4].lastElementChild.innerHTML = content.valor[0].v4;
-    trList[5].firstElementChild.innerHTML = content.prestacion[0].p5;
-    trList[5].lastElementChild.innerHTML = content.valor[0].v5;
-    trList[6].firstElementChild.innerHTML = content.prestacion[0].p6;
-    trList[6].lastElementChild.innerHTML = content.valor[0].v6;
-    var nodev = document.getElementById(1);
-    const lista = nodev.querySelectorAll('tr');
-    lista[1].firstElementChild.innerHTML = content.prestacion[0].p7;
-    lista[1].lastElementChild.innerHTML = content.valor[0].v7;
-    lista[2].firstElementChild.innerHTML = content.prestacion[0].p8;
-    lista[2].lastElementChild.innerHTML = content.valor[0].v8;
-    lista[3].firstElementChild.innerHTML = content.prestacion[0].p9;
-    lista[3].lastElementChild.innerHTML = content.valor[0].v9;
-    lista[4].firstElementChild.innerHTML = content.prestacion[0].p10;
-    lista[4].lastElementChild.innerHTML = content.valor[0].v10;
-    lista[5].firstElementChild.innerHTML = content.prestacion[0].p11;
-    lista[5].lastElementChild.innerHTML = content.valor[0].v11;
-    lista[6].firstElementChild.innerHTML = content.prestacion[0].p12;
-    lista[6].lastElementChild.innerHTML = content.valor[0].v12;
-    lista[7].firstElementChild.innerHTML = content.prestacion[0].p13;
-    lista[7].lastElementChild.innerHTML = content.valor[0].v13; 
+    const prestaciones = content.prestacion;
+    const values = content.valor;
+    const table1 = document.getElementById('0');
+    const table2 = document.getElementById('1');
+    table1.innerHTML = '';
+    table2.innerHTML = '';
+    var t1header = document.createElement('th')
+    t1header.colSpan = 2;
+    t1header.innerHTML = 'Prestaciones';
+    table1.appendChild(t1header)
+    var t2header = document.createElement('th')
+    t2header.colSpan = 2;
+    t2header.innerHTML = 'Dimensiones, Peso';
+    table2.appendChild(t2header)
+    for (var i = 0; i < 5; i++) {
+        var row = document.createElement('tr');
+        var description = document.createElement('td');
+        description.innerHTML = prestaciones[i];
+        var value = document.createElement('td');
+        value.innerHTML = values[i];
+        row.appendChild(description);
+        row.appendChild(value);
+        table1.appendChild(row)
+    }
+    for (var i = 5; i < 10; i++) {
+        var row = document.createElement('tr');
+        var description = document.createElement('td');
+        description.innerHTML = prestaciones[i];
+        var value = document.createElement('td');
+        value.innerHTML = values[i];
+        row.appendChild(description);
+        row.appendChild(value);
+        table2.appendChild(row)
+    }
 }
 
 
@@ -39,7 +43,6 @@ function populateSelect() {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             var content = JSON.parse(xhr.responseText);
-            console.log(content)
             setData(content);
         }
     }
