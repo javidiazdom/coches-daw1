@@ -5,11 +5,8 @@ const category = document.getElementById('category');
 const fileInput = document.getElementById('img');
 
 function validarForm(event) {
-    //event.preventDefault();
-    //var correcto = true;
     var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
     if(!expresion.test(email.value)) {
-        //correcto = false;
         event.preventDefault();
         document.getElementById('1').innerHTML='Email incorrecto';
         email.focus();
@@ -32,10 +29,14 @@ function validarForm(event) {
         document.getElementById('3').innerHTML='Imagen incorrecta';
     } else {
         document.getElementById('3').innerHTML='';
+        var reader = new FileReader();
+        reader.addEventListener("load",() => {
+            localStorage.setItem("inputImage", reader.result);
+        })
+        reader.readAsDataURL(fileInput.files[0]);
     }
 
     if(category.value == '') {
-        //correcto = false;
         event.preventDefault();
         document.getElementById('4').innerHTML='Escoja una opción';
         category.focus();
@@ -45,7 +46,6 @@ function validarForm(event) {
 
     if(description.value < 20 || description.value > 1200) {
         event.preventDefault();
-        //correcto = false;
         document.getElementById('5').innerHTML='Descipción incorrecta';
         description.focus();
     } else {
