@@ -28,6 +28,7 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', 'http://localhost:8080/Specifications.json');
+    const id = window.location.pathname.split("/")[2]
+    xhr.open('GET', `http://localhost:3000/${window.location.pathname}`);
     xhr.send();
 }

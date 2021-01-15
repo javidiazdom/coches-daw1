@@ -24,7 +24,7 @@ function setData (content) {
         section.appendChild(image)
         container.appendChild(section)
     });
-    document.getElementById('Specifications').href = '/coches/'+content.id+'/specifications'
+    document.getElementById('Specifications').href = '/reviews/'+content.id+'/specifications'
 }
 
 function populateSelect() {
@@ -36,6 +36,6 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', 'http://localhost:8080/Review.json');
+    xhr.open('GET', `http://localhost:3000${window.location.pathname}`);
     xhr.send();
 }

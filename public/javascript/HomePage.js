@@ -3,6 +3,7 @@ window.onload = populateSelect();
 function setData (content) {
     content.forEach((element, index) => {
         document.getElementsByClassName('title')[index].innerText = element.title
+        document.getElementsByClassName('tag')[index].innerText = element.category
         document.getElementsByClassName('body')[index].innerText = element.sections[0].body.substring(0, 80) + "..."
         const now = new Date()
         const created = new Date(element.created_at)
@@ -19,6 +20,6 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', 'http://localhost:8080/HomePage.json');
+    xhr.open('GET', 'http://localhost:3000/homepage');
     xhr.send();
 }
