@@ -3,6 +3,10 @@ window.onload = populateSelect();
 function setData (content) {
     content.forEach((element, index) => {
         document.getElementsByClassName('title')[index].innerText = element.title
+        document.getElementsByTagName('img')[index].src = "http://localhost:3000" + element.review_image
+        document.getElementById(index).onclick = () => {
+            window.location.replace(`/reviews/${element.id}`)
+        }
         document.getElementsByClassName('tag')[index].innerText = element.category
         document.getElementsByClassName('body')[index].innerText = element.sections[0].body.substring(0, 80) + "..."
         const now = new Date()

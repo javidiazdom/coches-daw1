@@ -1,6 +1,7 @@
 window.onload = populateSelect();
 
 function setData (content) {
+    console.log(content)
     var title = document.getElementById('title');
     title.innerHTML = content.title;
     var container = document.getElementsByClassName('review-container')[0];
@@ -14,7 +15,7 @@ function setData (content) {
         var image = document.createElement("img")
         var h2 = document.createElement("h2")
         h2.innerText = element.title
-        image.src = element.picture_url
+        image.src = "http://localhost:3000"+element.picture_url.url
         var text = document.createElement("p")
         text.innerText = element.body
         span.appendChild(h2)
@@ -32,7 +33,6 @@ function populateSelect() {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             var content = JSON.parse(xhr.responseText);
-            console.log(content)
             setData(content);
         }
     }

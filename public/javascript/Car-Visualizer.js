@@ -1,37 +1,39 @@
 $(document).ready(function () {
+    $(".containercar")[0].innerHTML = '';
     $.get({
-        url: "./Car-Visualizer.json",
+        url: `http://localhost:3000/${window.location.pathname}`,
         success: (response, status) => setData(response, status)
     })
 })
 
 function setData(response,status) {
-    const content = response.contenido;
-    $(".containercar")[0].innerHTML = '';
-
-    content.forEach((element, index) => {
+    console.log(response)
+    response.forEach((element, index) => {
         var item = document.createElement("div");
         item.className = "item";
         var img = document.createElement("img");
-        img.src = element.foto;
+        img.src ="http://localhost:3000"+element.review_image;
         item.appendChild(img);
         var carName = document.createElement("div");
         carName.className = "bordertext";
         carName.appendChild(document.createElement("center"))
-        carName.childNodes[0].innerHTML = element.nombre;
+        carName.childNodes[0].innerHTML = element.title;
         carName.childNodes[0].className = "cartext";
         item.appendChild(carName)
         item.onclick = () => {
-            window.location.replace("");
+            window.location.replace(`/reviews/${element.id}`);
         }
         var containerEsp = document.createElement("div");
         containerEsp.className = "containeresp";
         var tag = document.createElement("h2");
-        tag.innerHTML = element.nombre;
+        tag.innerHTML = element.title;
         var category = document.createElement("h3");
-        category.innerHTML = element.categoria
+        category.innerHTML = element.category
         var time = document.createElement("h4");
-        time.innerHTML = element.minutos
+        var creation = new Date(element.created_at)
+        var today = new Date()
+        var diference = new Date(today - creation)
+        time.innerHTML = "⏳ Hace " + diference.getMinutes() + " minutos"
         containerEsp.appendChild(tag)
         containerEsp.appendChild(category)
         containerEsp.appendChild(time)

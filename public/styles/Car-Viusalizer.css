@@ -2,10 +2,14 @@
     max-width: 60%;
     padding: 3%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 28% 28% 28%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-gap: 8%;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 .container2 {
@@ -24,8 +28,10 @@
 }
 
 .item {
-    border: #2C8168 3px solid;
+    cursor: pointer;
     border-radius: 10px;
+    max-width: 40%;
+    margin-bottom: 3rem;
 }
 
 .cartext {
@@ -70,6 +76,8 @@
 
     .item {
         border : none;
+        max-width: 100%;
+        margin-bottom: 0;
     }
 
     h2 {
@@ -77,6 +85,7 @@
     }
 
     h3 {
+        margin-top: 0.2rem;
         font-size: 0.9rem;
     }
 

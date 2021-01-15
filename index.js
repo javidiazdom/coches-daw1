@@ -10,7 +10,11 @@ const port = 8080
 app.use(express.static("public"));
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Coches app listening at http://localhost:${port}`)
+})
+
+app.get(['/reviews/combustion', '/reviews/electricos'], function (req, res){
+    res.sendFile(path.join(__dirname + "/templates/Car-Visualizer/coches.html"))
 })
 
 app.get('/reviews/:id' , function (req, res) {
@@ -21,6 +25,6 @@ app.get('/reviews/:id/specifications', (req, res) => {
     res.sendFile(path.join(__dirname + '/templates/Specifications/Specifications.html'))
 })
 
-app.get(['/reviews/combustion', 'reviews/electricos'], function (req, res){
-    res.sendFile(path.join(__dirname + "/templates/Car-Visualizer/coches.html"))
+app.get('/noticias', (req, res) => {
+    res.sendFile(path.join(__dirname + '/templates/News/News.html'))
 })
