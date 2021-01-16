@@ -25,6 +25,10 @@ app.get('/reviews/:id/specifications', (req, res) => {
     res.sendFile(path.join(__dirname + '/templates/Specifications/Specifications.html'))
 })
 
-app.get('/noticias', (req, res) => {
+app.get(['/noticias', '/futuro'], (req, res) => {
     res.sendFile(path.join(__dirname + '/templates/News/News.html'))
+})
+
+app.get('/form', (req, res) => {
+    res.sendFile(path.join(__dirname + '/templates/Form/Form.html'))
 })

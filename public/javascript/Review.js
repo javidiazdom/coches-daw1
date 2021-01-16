@@ -15,7 +15,7 @@ function setData (content) {
         var image = document.createElement("img")
         var h2 = document.createElement("h2")
         h2.innerText = element.title
-        image.src = "http://localhost:3000"+element.picture_url.url
+        image.src = "http://localhost:3000"+element.picture_url.url  
         var text = document.createElement("p")
         text.innerText = element.body
         span.appendChild(h2)

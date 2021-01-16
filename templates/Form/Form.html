@@ -5,43 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
-    <script src="./Form.js" defer></script>
-    <link rel="stylesheet" href="../Styles.css">
-    <link rel="stylesheet" href="./Form.css">
+    <script src="/javascript/Form.js" defer></script>
+    <link rel="stylesheet" href="/styles/Styles.css">
+    <link rel="stylesheet" href="/styles/Form.css">
     <title>Review Form</title>
 </head>
 
 <body>
+    <header>
+        <div class="gray1-square"></div>
+        <div class="gray2-square"></div>
+        <a href = "http://localhost:8080"><h1>Coches</h1></a>
+    </header>
+    <nav>
+        <a href="/reviews/combustion">Combustión</a>
+        <a href="/reviews/electricos">Eléctricos</a>
+        <a href="/noticias">Noticias</a> 
+        <a href="/futuro">Futuro</a>
+        <a href="/form">Nueva Review</a>
+    </nav>
     <div class="align">
-        <h1>📃New Review</h1>
+        <h1>📃Nueva Review</h1>
         <form id="form" onsubmit="validarForm(event)">
             <div class="containerform">
                 <div class="containerinput">
                     <label for= "email">Email</label>
                     <input class="sinborde" type="email" size="137"
                         placeholder="Email 'name@domain.org'" name="email" id="email"> </div>
-                <div id="1" class="div-error"></div>
+                <div id="1" class="div-error"></div> 
+                <br>
                 <div class="containerinput">
-                    <label for="title">Title</label>
+                    <label for="title">Título</label>
                     <input class="sinborde" type="text" size="137"
                     placeholder="Title 'Not empty and less than 25'" name="title" id="titl"> </div>
                 <div id="2" class="div-error"></div>
+                <br>
                 <div class="containerinput">
-                    <label for="image">Image</label>
+                    <label for="image">Imagen</label>
                     <input class="sinborde" type="file" value="image/*" name="image" id="img">
                 </div>
                 <div id="3" class="div-error"></div>
+                <br>
                 <div class="containerinput">
-                    <label for="category">Category</label>
+                    <label for="category">Categoría</label>
                     <select class="sinborde" name="Category" id="category">
                         <option value=''>...</option>
-                        <option>Combustion</option>
-                        <option>Electric</option>
+                        <option>combustion</option>
+                        <option>electrico</option>
                     </select>
                 </div>
                 <div id="4" class="div-error"></div>
+                <br>
                 <div class = "containerinput">
-                    <label for ="description">Description</label>
+                    <label for ="description">Descripción</label>
                     <textarea class="sinborde" cols="140" rows="10"
                         placeholder="Description'Not empty and less than 1200'" name="description"
                         id="descr"></textarea>
