@@ -15,7 +15,7 @@ function setData (content) {
         var image = document.createElement("img")
         var h2 = document.createElement("h2")
         h2.innerText = element.title
-        image.src = "http://shielded-bastion-36750.herokuapp.com"+element.picture_url.url  
+        image.src = "https://shielded-bastion-36750.herokuapp.com"+element.picture_url.url  
         var text = document.createElement("p")
         text.innerText = element.body
         span.appendChild(h2)
@@ -36,6 +36,6 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', `http://shielded-bastion-36750.herokuapp.com${window.location.pathname}`);
+    xhr.open('GET', `https://shielded-bastion-36750.herokuapp.com${window.location.pathname}`);
     xhr.send();
 }

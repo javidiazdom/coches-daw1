@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 app.use(express.static("public"));
 
 app.listen(port, () => {
-    console.log(`Coches app listening at http://localhost:${port}`)
+    console.log(`Coches app listening at https://localhost:${port}`)
 })
 
 app.get(['/reviews/combustion', '/reviews/electricos'], function (req, res){

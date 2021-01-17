@@ -92,7 +92,7 @@ function validarForm(event) {
         XHR.addEventListener( 'error', function( event ) {
             
         });
-        XHR.open('POST', 'http://shielded-bastion-36750.herokuapp.com/reviews')
+        XHR.open('POST', 'https://shielded-bastion-36750.herokuapp.com/reviews')
         XHR.send(data)
 
     }

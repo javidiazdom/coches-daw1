@@ -12,7 +12,7 @@ function setData(response,status) {
         var item = document.createElement("div");
         item.className = "item";
         var img = document.createElement("img");
-        img.src ="http://shielded-bastion-36750.herokuapp.com"+element.review_image;
+        img.src ="https://shielded-bastion-36750.herokuapp.com"+element.review_image;
         item.appendChild(img);
         var carName = document.createElement("div");
         carName.className = "bordertext";

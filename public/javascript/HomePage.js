@@ -3,8 +3,8 @@ window.onload = populateSelect();
 function setData (content) {
     content.forEach((element, index) => {
         document.getElementsByClassName('title')[index].innerText = element.title
-        document.getElementsByClassName('desktop-img')[index].src = "http://shielded-bastion-36750.herokuapp.com" + element.review_image
-        document.getElementsByClassName('movil-img')[index].src = "http://shielded-bastion-36750.herokuapp.com" + element.review_image
+        document.getElementsByClassName('desktop-img')[index].src = "https://shielded-bastion-36750.herokuapp.com" + element.review_image
+        document.getElementsByClassName('movil-img')[index].src = "https://shielded-bastion-36750.herokuapp.com" + element.review_image
         document.getElementById(index).onclick = () => {
             window.location.replace(`/reviews/${element.id}`)
         }
@@ -28,6 +28,6 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', 'http://shielded-bastion-36750.herokuapp.com/homepage');
+    xhr.open('GET', 'https://shielded-bastion-36750.herokuapp.com/homepage');
     xhr.send();
 }
