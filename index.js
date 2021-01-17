@@ -5,7 +5,7 @@ var fs = require('fs')
 const { stringify } = require('querystring')
 const { response } = require('express')
 const app = express()
-const port = 8080
+const port = 80
 
 app.use(express.static("public"));
 
