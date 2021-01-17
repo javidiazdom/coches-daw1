@@ -29,6 +29,15 @@ label {
   align-content: center;
 }
 
+.new  {
+  width: 120px;
+  height: 30px;
+  color: #000000;
+  border-radius: 8px;
+  background-color: #61ce2e;
+  border: 0;
+}
+
 .submit {
   width: 120px;
   height: 30px;

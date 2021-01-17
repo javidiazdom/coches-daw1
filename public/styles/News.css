@@ -23,7 +23,14 @@
 
 .preview-text {
   padding: 1rem 1rem 2.2rem 1rem;
+  overflow: hidden;
 }
+
+.preview-text p {
+  text-overflow: hidden;
+  overflow: hidden;
+}
+
 
 .parrafo {
   display: block;
