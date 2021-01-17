@@ -4,7 +4,7 @@ function setData (content) {
 
     for (var i = 0; i < content.length; i++) {
         node = document.getElementById(i);
-        node.childNodes[1].src = 'http://localhost:3000'+content[i].picture.url;
+        node.childNodes[1].src = 'http://shielded-bastion-36750.herokuapp.com'+content[i].picture.url;
         node.childNodes[3].childNodes[1].innerHTML = content[i].title;
         node.childNodes[3].childNodes[3].innerHTML = content[i].category;
         node.childNodes[3].childNodes[5].innerHTML = content[i].description;
@@ -17,7 +17,7 @@ function setData (content) {
     }
 
     foto = document.getElementById(5);
-    foto.childNodes[1].src = 'http://localhost:3000'+content[0].picture.url;
+    foto.childNodes[1].src = 'http://shielded-bastion-36750.herokuapp.com'+content[0].picture.url;
     
 }
 
@@ -30,6 +30,6 @@ function populateSelect() {
             setData(content);
         }
     }
-    xhr.open('GET', `http://localhost:3000/${window.location.pathname}`);
+    xhr.open('GET', `http://shielded-bastion-36750.herokuapp.com/${window.location.pathname}`);
     xhr.send();
 }

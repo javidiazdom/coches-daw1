@@ -29,6 +29,6 @@ function populateSelect() {
         }
     }
     const id = window.location.pathname.split("/")[2]
-    xhr.open('GET', `http://localhost:3000/${window.location.pathname}`);
+    xhr.open('GET', `http://shielded-bastion-36750.herokuapp.com/${window.location.pathname}`);
     xhr.send();
 }
