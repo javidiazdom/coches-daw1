@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".containercar")[0].innerHTML = '';
     $.get({
-        url: `https://shielded-bastion-36750.herokuapp.com/${window.location.pathname}`,
+        url: `192.168.122.200/${window.location.pathname}`,
         success: (response, status) => setData(response, status)
     })
 })
@@ -12,7 +12,7 @@ function setData(response,status) {
         var item = document.createElement("div");
         item.className = "item";
         var img = document.createElement("img");
-        img.src ="https://shielded-bastion-36750.herokuapp.com"+element.review_image;
+        img.src ="192.168.122.200"+element.review_image;
         item.appendChild(img);
         var carName = document.createElement("div");
         carName.className = "bordertext";

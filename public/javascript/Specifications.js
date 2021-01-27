@@ -29,6 +29,6 @@ function populateSelect() {
         }
     }
     const id = window.location.pathname.split("/")[2]
-    xhr.open('GET', `https://shielded-bastion-36750.herokuapp.com/${window.location.pathname}`);
+    xhr.open('GET', `192.168.122.200/${window.location.pathname}`);
     xhr.send();
 }
